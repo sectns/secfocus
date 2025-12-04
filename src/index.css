@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #02040a;
+  color: #e5e5e5;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #10b981; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #059669; }
+
+.glass {
+  background: rgba(15, 15, 15, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-strong {
+  background: rgba(5, 5, 5, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.input-field {
+  @apply w-full bg-[#0a0a0a] border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500/50 transition-all placeholder:text-neutral-600 font-medium;
+}
+
+.btn-primary {
+  @apply bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-6 rounded-xl transition-all shadow-lg shadow-emerald-900/20 active:scale-95 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed select-none;
+}
+
+.chat-me {
+  @apply bg-emerald-600 text-white rounded-2xl rounded-tr-none px-4 py-2.5 text-sm shadow-md max-w-[85%] break-words ml-auto;
+}
+.chat-other {
+  @apply bg-[#1a1a1a] text-neutral-200 border border-white/10 rounded-2xl rounded-tl-none px-4 py-2.5 text-sm max-w-[85%] break-words mr-auto;
+}
