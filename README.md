@@ -53,5 +53,5 @@ Projeyi yerel makinenizde çalıştırmak için:
 
 ### 1. Projeyi Klonlayın
 ```bash
-git clone [https://github.com/sectns/secfocus.git](https://github.com/sectns/secfocus.git)
+git clone https://github.com/sectns/secfocus.git
 cd secfocus
